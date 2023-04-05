@@ -54,20 +54,20 @@ export default {
     counter() {
       return this.$store.getters['shop/quantityCounter'][this.id] || 0
     },
-    selectedProduct(){
+    selectedProduct() {
       return this.$store.getters['shop/displayItems'][this.id]
     },
     name() {
-      return this.selectedProduct?.name
+      return this.selectedProduct.name
     },
     ref() {
-      return this.selectedProduct?.ref
+      return this.selectedProduct.ref
     },
     description() {
-      return this.selectedProduct?.description
+      return this.selectedProduct.description
     },
     price() {
-      return this.selectedProduct?.price
+      return this.selectedProduct.price
     },
 
   },
@@ -90,14 +90,13 @@ export default {
     addToCart() {
       // Call the mutation to push the article and the number of product
       // into the cart
-      console.log(this.id)
       this.$store.commit('shop/addToCart', this.id)
     }
   },
   created() {
     // Display the item by its Id, and allowed us to call attribut through 'selectedProduct'
-  this.$store.dispatch('shop/getListingData')
-  this.$store.dispatch('home/getImageHome')
+    this.$store.dispatch('shop/getListingData')
+    this.$store.dispatch('home/getImageHome')
 
   }
 
@@ -160,8 +159,6 @@ span {
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
-
-
 
 @media (min-width:768px) {
   .carousel-img {

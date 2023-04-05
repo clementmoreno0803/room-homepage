@@ -125,7 +125,7 @@ span {
 
   h1 {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .container {

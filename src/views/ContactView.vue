@@ -1,6 +1,6 @@
 <template>
 <div class="contact-container">
-  <h2 class="titre">On serait heureux d'avoir de vos nouvelles &#9996;</h2>
+  <h2 class="titre">On serait heureux d'avoir de vos nouvelles</h2>
   <form @submit.prevent="submitForm">
     <div class="name">
       <div class="form-input">
@@ -63,11 +63,12 @@ export default {
 
 <style scoped>
 .hamburger {
-    display: block;
-    position: relative;
-    z-index: 999;
-    filter: invert(1);
+  display: block;
+  position: relative;
+  z-index: 999;
+  filter: invert(1);
 }
+
 .contact-container {
   position: absolute;
   top: 50%;
@@ -143,9 +144,9 @@ select {
   }
 
   .name,
-.more-info {
-  flex-direction: row;
+  .more-info {
+    flex-direction: row;
 
-}
+  }
 }
 </style>

@@ -236,7 +236,7 @@ nav a.router-link-exact-active {
     margin-bottom: 0;
   }
 
-  nav a{
+  nav a {
     margin-bottom: 0;
   }
 
